@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  reactapp:
+    build:
+      context: .  # Use the current directory as the build context
+      dockerfile: Dockerfile  # Specify the name of your Dockerfile
+    container_name: react_vite_app
+    ports:
+      - '3000:3000'
